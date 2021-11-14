@@ -51,31 +51,60 @@
                         </div>
                     </div>
                     <div class="col-lg-6 col-12">
+                        <div class="md-tabs">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="br" role="tabpanel" aria-labelledby="br-tab">
 
-                        <section class="output-wrapper">
-                            <p>Border radius</p>
-                            <div>
-                                <code class="br-output" id="brOutput"></code><button class="br-copy "><i
-                                        class="icon-copy"></i></button>
-                                        <button class="main-btn-primary" id="generateRadius">Generate!</button>
+
+                                    <section class="output-wrapper">
+                                        <p>Border radius</p>
+                                        <div>
+                                            <code class="br-output" id="brOutput"></code><button class="br-copy "><i
+                                                    class="icon-copy"></i></button>
+                                            <button class="main-btn-secondary" id="generateRadius">Generate!</button>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="bg" role="tabpanel" aria-labelledby="bg-tab">
+
+                                    <section class="output-wrapper">
+                                        <p>Linear gradient</p>
+                                        <div>
+                                            <code class="bg-output" id="bgOutput"></code><button class="bg-copy "><i
+                                                    class="icon-copy"></i></button>
+                                            <button id="generateGradient" class="main-btn-secondary">Generate!</button>
+                                        </div>
+                                    </section>
+                                </div>
+                                <div class="tab-pane fade" id="bs" role="tabpanel" aria-labelledby="bs-tab">
+                                    <section class="output-wrapper">
+                                        <p>Box shadow</p>
+                                        <div>
+                                            <code class="bs-output" id="bsOutput"></code><button class="bs-copy "><i
+                                                    class="icon-copy"></i></button>
+                                            <button id="generateBoxShadow" class="main-btn-secondary">Generate!</button>
+                                        </div>
+                                    </section>
+                                </div>
                             </div>
-                        </section>
-                        <section class="output-wrapper">
-                            <p>Linear gradient</p>
-                            <div>
-                                <code class="bg-output" id="bgOutput"></code><button class="bg-copy "><i
-                                        class="icon-copy"></i></button>
-                                        <button id="generateGradient" class="main-btn-primary">Generate!</button>
-                            </div>
-                        </section>
-                        <section class="output-wrapper">
-                            <p>Box shadow</p>
-                            <div>
-                                <code class="bs-output" id="bsOutput"></code><button class="bs-copy "><i
-                                        class="icon-copy"></i></button>
-                                        <button id="generateBoxShadow" class="main-btn-primary">Generate!</button>
-                            </div>
-                        </section>
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="br-tab" data-bs-toggle="tab"
+                                        data-bs-target="#br" type="button" role="tab" aria-controls="br"
+                                        aria-selected="true">border-radius</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="bg-tab" data-bs-toggle="tab" data-bs-target="#bg"
+                                        type="button" role="tab" aria-controls="bg"
+                                        aria-selected="false">linear-gradient</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="bs-tab" data-bs-toggle="tab" data-bs-target="#bs"
+                                        type="button" role="tab" aria-controls="bs"
+                                        aria-selected="false">box-shadow</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
