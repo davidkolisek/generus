@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+table {
+  width: 100%;
+  thead {
+    tr {
+      td {
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+      }
+    }
+  }
+}
+
+//wrapper for responsive table
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

@@ -1,0 +1,36 @@
+$themes: (
+        'unicorn': (
+                'primary': hotpink,
+                'secondary': pink
+        ),
+        'dragon': (
+                'primary': firebrick,
+                'secondary': red
+        )
+) !default;
+
+
+@mixin themify($themes: $themes) {
+  // Properties to output, more can be added (e.g. `border-left-color`)
+  $properties: ('border-color', 'background-color', 'color');
+
+  // Iterate over the themes
+  @each $theme, $colors in $themes {
+    // Iterate over the colors from the theme
+    @each $color-name, $color in $colors {
+      // Iterate over the properties
+      @each $property in $properties {
+        // Create a selector
+        // e.g. `.theme .color-primary, .theme.color-primary`
+        .theme-#{$theme} .#{$property}-#{$color-name},
+        .theme-#{$theme}.#{$property}-#{$color-name} {
+          #{$property}: $color;
+        }
+      }
+    }
+  }
+}
+
+.media {
+  border-top: 5px solid;
+}

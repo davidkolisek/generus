@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+.ly-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  .example-box-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .border-box {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .inputs-wrapper {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 2rem;
+      span {
+          width: 30px;
+          height: 30px;
+          display: block;
+          &:before{
+              content: ''
+          }
+      }
+      .input-row {
+        label {
+          display: block;
+        }
+        input {
+            max-width: 80px;
+            position: relative;
+            border-radius: $primary-radius;
+            background: $white_c;
+            overflow: hidden;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+              rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+              rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+              border: none;
+              padding: .5rem 1rem;
+              &:focus{
+                  outline: 0;
+              }
+        }
+      }
+    }
+  }
+  section.output-wrapper {
+    margin-bottom: 2rem;
+    p{
+        margin-bottom: 0;
+        font-weight: 500;
+    }
+    div {
+      position: relative;
+      border-radius: $primary-radius;
+      background: $white_c;
+      overflow: hidden;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      code {
+        padding: 1rem;
+        padding-left: 3rem;
+        padding-right: 7.5rem;
+        display: block;
+        @media(max-width: $bp-tablet){
+            position: relative;
+            width: 100%;
+            padding-right: 1rem;
+        }
+      }
+      button {
+        &:nth-child(2) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          border: none;
+          background: transparent;
+          padding: 0.5rem 1rem;
+          i {
+            color: $c-secondary-500;
+          }
+          @media(max-width: $bp-tablet){
+            bottom: 2.5rem;
+          }
+        }
+      }
+    }
+    .main-btn-primary {
+      border: none;
+      padding: .5rem 1rem;
+      font-size: 1.1rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      @media(max-width: $bp-tablet){
+          position: relative;
+          width: 100%;
+      }
+    }
+  }
+}
+
+
+.copied-popup{
+    position: fixed;
+    padding: .5rem;
+    border-radius: $primary-radius;
+    color: $white_c;
+    bottom: -40px;
+    opacity: 0;
+    left: calc(50% - 110px);
+    text-align: center;
+    margin: 0 auto;
+    width: 220px;
+    background: #50cd55;
+    transition: all ease 200ms;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+      rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+      rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+      &.active{
+          transition: all ease 200ms;
+          bottom: 3rem;
+          opacity: 1;
+      }
+}

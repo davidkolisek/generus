@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700&display=swap" rel="stylesheet">
+    <!--OG-->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Structured Data -->
+    <!--Analytics-->
+</head>
+
+<body class="ly-body">
+    <div class="ly-layout">
+        <header class="ly-header">
+            <di class="header-wrapper">
+                <h1>Generus</h1>
+                <p>fancy <span>border-radius</span> generator</p>
+            </di>
+        </header>
+        <main class="ly-content">
+            <div class="container">
+                <div class="row example-box-wrapper">
+                    <div class="col-lg-6 col-12">
+                        <div class="border-box"></div>
+                        <div class="inputs-wrapper">
+                            <div class="input-row">
+                                <label for="wInput">Width(px)</label>
+                                <input type="number" placeholder="width box" class="w-input" max="500">
+                            </div>
+                            <span>
+                            </span>
+                            <div class="input-row">
+                                <label for="hInput">Height(px)</label>
+                                <input type="number" placeholder="height box" class="h-input" max="500">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+
+                        <section class="output-wrapper">
+                            <p>Border radius</p>
+                            <div>
+                                <code class="br-output" id="brOutput"></code><button class="br-copy "><i
+                                        class="icon-copy"></i></button>
+                                        <button class="main-btn-primary" id="generateRadius">Generate!</button>
+                            </div>
+                        </section>
+                        <section class="output-wrapper">
+                            <p>Linear gradient</p>
+                            <div>
+                                <code class="bg-output" id="bgOutput"></code><button class="bg-copy "><i
+                                        class="icon-copy"></i></button>
+                                        <button id="generateGradient" class="main-btn-primary">Generate!</button>
+                            </div>
+                        </section>
+                        <section class="output-wrapper">
+                            <p>Box shadow</p>
+                            <div>
+                                <code class="bs-output" id="bsOutput"></code><button class="bs-copy "><i
+                                        class="icon-copy"></i></button>
+                                        <button id="generateBoxShadow" class="main-btn-primary">Generate!</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-12 col-12 d-lg-block d-none"></div>
+                    <div class="col-lg-6 col-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                    </div>
+                    <div class="col-lg-6 col-12">
+                    </div>
+                </div>
+            </div>
+            <div class="copied-popup">
+                Copied to your clipboard!
+            </div>
+        </main>
+        <footer class="ly-footer">
+            <div class="container">
+                <p>
+                    &#169; <span id="year" class="d-inline-block"></span> | Made with 💜 by <a
+                        href="https://davidkolisek.netlify.app/" target="_blank">davidkolisek</a>
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

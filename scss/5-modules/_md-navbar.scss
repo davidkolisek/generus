@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+.md-navbar {
+  ul {
+    li {
+      a {
+        i {
+
+        }
+        &.active{
+
+        }
+        &:hover{
+
+        }
+      }
+    }
+  }
+}
+
+//if website is onepage use <a name="hrefId">
+//offset cause fixed navbar
+a[name] {
+  top: -55px; //based on navigation height (breakpoint)
+  position: absolute;
+  @media(max-width: $bp-tablet) {
+    top: -80px; //based on navigation height
+  }
+}

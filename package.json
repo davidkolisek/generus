@@ -1,0 +1,16 @@
+{
+  "name": "start-template",
+  "version": "1.0.1",
+  "description": "start html/bootstrap template",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkolisek/start_template.git"
+  },
+  "author": "davidkolisek",
+  "bugs": {
+    "url": "https://github.com/davidkolisek/start_template/issues"
+  },
+  "homepage": "https://github.com/davidkolisek/start_template#readme",
+  "dependencies": {
+  }
+}

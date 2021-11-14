@@ -1,0 +1,66 @@
+//theme colors
+$c-primary-50: #e5f6ff;
+$c-primary-100: #bae3fa;
+$c-primary-200: #8dd0f8;
+$c-primary-300: #63bef6;
+$c-primary-400: #45acf5;
+$c-primary-500: #3792dc;
+$c-primary-600: #2a71aa;
+$c-primary-700: #1e5179; //hover
+$c-primary-800: #0e3149; //primary
+$c-primary-900: #00101a; //active
+
+$c-secondary-50: #e2f7ff;
+$c-secondary-100: #b9e3f9;
+$c-secondary-200: #8ed0f3;
+$c-secondary-300: #64bced;
+$c-secondary-400: #3fa9e8; //hover
+$c-secondary-500: #2c8fce; //primary
+$c-secondary-600: #2070a0; //active
+$c-secondary-700: #155073;
+$c-secondary-800: #063046;
+$c-secondary-900: #00111a;
+
+$c-warn-50: #fdfcde;
+$c-warn-100: #f6f3b7;
+$c-warn-200: #f0eb8c;
+$c-warn-300: #eae360;
+$c-warn-400: #e4db35; //hover
+$c-warn-500: #cac21b; //primary
+$c-warn-600: #9d9712; //active
+$c-warn-700: #706c09;
+$c-warn-800: #434102;
+$c-warn-900: #171700;
+
+//fonts colors
+$primary-font-color: #333333;
+$secondary-font-color: #666666;
+
+//other colors
+$white_c: #fff;
+$black_c: #000;
+$c_1: #ccc;
+
+//breakpoints
+$bp-phone-small: 576px;
+$bp-phone: 768px;
+$bp-tablet: 991px;
+$bp-laptop: 1199px;
+
+//fonts
+$default-fs: 16px;
+$primary-font-family: "Jost", sans-serif;
+$secondary-font-family: "Times New Roman", sans-serif;
+
+//transition
+$primary-transition: all 0.15s ease-in-out;
+
+//box shadow
+$primary-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+  0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+//border-radius
+$primary-radius: 5px;
+$secondary-radius: 12px;
+$circle-radius: 999px;
+$zero-radius: 0;

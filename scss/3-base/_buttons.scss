@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+.main-btn {
+  &-primary {
+    background-color: $c-primary-800;
+    color: $white_c;
+
+    &:hover {
+      background-color: $c-primary-700;
+      @include smooth-transition($primary-transition);
+    }
+
+    &:active {
+      background-color: $c-primary-900;
+      @include smooth-transition($primary-transition);
+    }
+  }
+
+  &-secondary {
+    background-color: $c-secondary-500;
+    color: $white_c;
+
+    &:hover {
+      background-color: $c-secondary-400;
+      @include smooth-transition($primary-transition);
+    }
+
+    &:active {
+      background-color: $c-secondary-600;
+      @include smooth-transition($primary-transition);
+    }
+  }
+
+  &-link {
+    &-primary {
+      background: transparent;
+      color: $c-primary-800;
+
+      &:hover {
+        color: $c-primary-700;
+        text-decoration: none;
+        @include smooth-transition($primary-transition);
+      }
+    }
+    &-secondary {
+      background: transparent;
+      color: $c-secondary-500;
+
+      &:hover {
+        color:  $c-secondary-400;
+        text-decoration: none;
+        @include smooth-transition($primary-transition);
+      }
+    }
+  }
+  &.btn-size {
+    width: 100%;
+    &-sm {
+      padding: 0.25rem 1rem;
+    }
+    &-md {
+      padding: 0.5rem 1.25rem;
+    }
+    &-lg {
+      padding: 1rem 1.5rem;
+      @media (max-width: $bp-tablet) {
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}

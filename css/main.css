@@ -1,0 +1,435 @@
+@charset "UTF-8";
+.main-btn-primary {
+  background-color: #0e3149;
+  color: #fff;
+}
+.main-btn-primary:hover {
+  background-color: #1e5179;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn-primary:active {
+  background-color: #00101a;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn-secondary {
+  background-color: #2c8fce;
+  color: #fff;
+}
+.main-btn-secondary:hover {
+  background-color: #3fa9e8;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn-secondary:active {
+  background-color: #2070a0;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn-link-primary {
+  background: transparent;
+  color: #0e3149;
+}
+.main-btn-link-primary:hover {
+  color: #1e5179;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn-link-secondary {
+  background: transparent;
+  color: #2c8fce;
+}
+.main-btn-link-secondary:hover {
+  color: #3fa9e8;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+.main-btn.btn-size {
+  width: 100%;
+}
+.main-btn.btn-size-sm {
+  padding: 0.25rem 1rem;
+}
+.main-btn.btn-size-md {
+  padding: 0.5rem 1.25rem;
+}
+.main-btn.btn-size-lg {
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 991px) {
+  .main-btn.btn-size-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+table {
+  width: 100%;
+}
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+hr {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+a {
+  color: #0e3149;
+}
+
+h1, h2, h3, h4, h5, h6, p, small, strong, ul, li {
+  position: relative;
+  color: #0e3149;
+}
+
+.fw-100 {
+  font-weight: 100 !important;
+}
+
+.fw-200 {
+  font-weight: 200 !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  font-family: "Jost", sans-serif;
+  background: #f7f7f7;
+}
+@media (max-width: 991px) {
+  body,
+html {
+    height: auto;
+  }
+}
+
+.border-box {
+  background: linear-gradient(var(--gradient-direction), var(--c-1), var(--c-2)) !important;
+  width: 250px;
+  height: 250px;
+  box-shadow: var(--offsetX) var(--offsetY) var(--blurRadius) var(--color);
+}
+
+ul, ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icons/icomoon.eot?giliyk");
+  src: url("../fonts/icons/icomoon.eot?giliyk#iefix") format("embedded-opentype"), url("../fonts/icons/icomoon.ttf?giliyk") format("truetype"), url("../fonts/icons/icomoon.woff?giliyk") format("woff"), url("../fonts/icons/icomoon.svg?giliyk#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.i-example:before {
+  content: "";
+}
+
+.icon-minus:before {
+  content: "";
+}
+
+.icon-close:before {
+  content: "";
+}
+
+.icon-envelope:before {
+  content: "";
+}
+
+.icon-user:before {
+  content: "";
+}
+
+.icon-chevron-right:before {
+  content: "";
+}
+
+.icon-plus:before {
+  content: "";
+}
+
+.icon-check:before {
+  content: "";
+}
+
+.icon-copy:before {
+  content: "";
+}
+
+.ly-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+@media (max-width: 991px) {
+  .ly-layout {
+    min-height: unset;
+  }
+}
+
+.ly-header {
+  text-align: center;
+}
+.ly-header .header-wrapper {
+  padding: 1rem;
+}
+.ly-header .header-wrapper h1 {
+  margin: 0;
+  font-weight: 700;
+  color: #0e3149;
+  font-size: 3rem;
+}
+.ly-header .header-wrapper p {
+  font-weight: 300;
+  color: #1e5179;
+  font-size: 1.25rem;
+}
+
+.ly-footer {
+  background: #0e3149;
+  text-align: center;
+}
+.ly-footer p {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #fff;
+}
+.ly-footer p a {
+  color: #fff;
+}
+
+.ly-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.ly-content .example-box-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.ly-content .example-box-wrapper .border-box {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+.ly-content .example-box-wrapper .inputs-wrapper {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.ly-content .example-box-wrapper .inputs-wrapper span {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+.ly-content .example-box-wrapper .inputs-wrapper span:before {
+  content: "";
+}
+.ly-content .example-box-wrapper .inputs-wrapper .input-row label {
+  display: block;
+}
+.ly-content .example-box-wrapper .inputs-wrapper .input-row input {
+  max-width: 80px;
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border: none;
+  padding: 0.5rem 1rem;
+}
+.ly-content .example-box-wrapper .inputs-wrapper .input-row input:focus {
+  outline: 0;
+}
+.ly-content section.output-wrapper {
+  margin-bottom: 2rem;
+}
+.ly-content section.output-wrapper p {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.ly-content section.output-wrapper div {
+  position: relative;
+  border-radius: 5px;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.ly-content section.output-wrapper div code {
+  padding: 1rem;
+  padding-left: 3rem;
+  padding-right: 7.5rem;
+  display: block;
+}
+@media (max-width: 991px) {
+  .ly-content section.output-wrapper div code {
+    position: relative;
+    width: 100%;
+    padding-right: 1rem;
+  }
+}
+.ly-content section.output-wrapper div button:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1rem;
+}
+.ly-content section.output-wrapper div button:nth-child(2) i {
+  color: #2c8fce;
+}
+@media (max-width: 991px) {
+  .ly-content section.output-wrapper div button:nth-child(2) {
+    bottom: 2.5rem;
+  }
+}
+.ly-content section.output-wrapper .main-btn-primary {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+@media (max-width: 991px) {
+  .ly-content section.output-wrapper .main-btn-primary {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.copied-popup {
+  position: fixed;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+  bottom: -40px;
+  opacity: 0;
+  left: calc(50% - 110px);
+  text-align: center;
+  margin: 0 auto;
+  width: 220px;
+  background: #50cd55;
+  transition: all ease 200ms;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.copied-popup.active {
+  transition: all ease 200ms;
+  bottom: 3rem;
+  opacity: 1;
+}
+
+.md-box {
+  width: 100%;
+  overflow: hidden;
+}
+.md-box .bg-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.md-card {
+  width: 100%;
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+a[name] {
+  top: -55px;
+  position: absolute;
+}
+@media (max-width: 991px) {
+  a[name] {
+    top: -80px;
+  }
+}
+
+.media {
+  border-top: 5px solid;
+}
+
+/*# sourceMappingURL=main.css.map */
