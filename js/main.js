@@ -64,8 +64,8 @@ window.addEventListener("DOMContentLoaded", (event) => {
   btnGradient.addEventListener(
     "click",
     function (e) {
-      let c1 = Math.floor(Math.random() * 16777215).toString(16);
-      let c2 = Math.floor(Math.random() * 16777215).toString(16);
+      let c1 = Math.random().toString(16).slice(2, 8); 
+      let c2 = Math.random().toString(16).slice(2, 8); 
       let gDirections = ["top", "left", "right", "bottom"];
       let gType = [
         "linear",
@@ -108,7 +108,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
       let offsetX = Math.floor(Math.random() * (50 - -50 + 1)) + -50;
       let offsetY = Math.floor(Math.random() * 100);
       let blurRadius = Math.floor(Math.random() * 100);
-      let color = Math.floor(Math.random() * 16777215).toString(16);
+      let color = Math.random().toString(16).slice(2, 8); 
       pageBody.setAttribute(
         "style",
         "--offsetX:" +
@@ -209,6 +209,48 @@ window.addEventListener("DOMContentLoaded", (event) => {
     },
     false
   );
+
+  //random divs
+  // mainDiv = document.querySelector( '.random-br-wrapper' );
+  // for (var i = 1; i <= 16; i++) {
+
+  //   let rnd1 = Math.floor(Math.random() * 100);
+  //   let rnd2 = Math.floor(Math.random() * 100);
+  //   let rnd3 = Math.floor(Math.random() * 100);
+  //   let rnd4 = Math.floor(Math.random() * 100);
+  //   // /
+
+  //   let rnd5 = Math.floor(Math.random() * 100);
+  //   let rnd6 = Math.floor(Math.random() * 100);
+  //   let rnd7 = Math.floor(Math.random() * 100);
+  //   let rnd8 = Math.floor(Math.random() * 100);
+  //     mainDiv.innerHTML += '<div class="col-lg-3 col-md-4 col-sm-6 col-12"><div class="random-block' + i + '"><p></p></div></ div>';
+  //     document.querySelector( '.random-block' + i ).style.backgroundColor = '#' + Math.random().toString(16).slice(2, 8);
+  //     document.querySelector( '.random-block' + i ).style.borderRadius =
+  //     rnd1 +
+  //     "% " +
+  //     "" +
+  //     rnd2 +
+  //     "% " +
+  //     "" +
+  //     rnd3 +
+  //     "% " +
+  //     "" +
+  //     rnd4 +
+  //     "% " +
+  //     " / " +
+  //     rnd5 +
+  //     "% " +
+  //     rnd6 +
+  //     "% " +
+  //     rnd7 +
+  //     "% " +
+  //     rnd8 +
+  //     "%";
+  //     var target = document.querySelectorAll(".col-lg-3 p");
+  //     target.innerHTML = 'border-radius: '+window.getComputedStyle(borderBox).borderRadius +';';
+  // }
+ 
 
   document.getElementById("year").innerHTML = new Date().getFullYear();
 });

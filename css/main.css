@@ -394,6 +394,12 @@ ul, ol {
   opacity: 1;
 }
 
+.random-br-wrapper div div {
+  padding: 1rem;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+
 .md-box {
   width: 100%;
   overflow: hidden;
