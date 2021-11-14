@@ -1,2 +1,2 @@
-# start_template
-html/css bootstrap started template
+# generus
+generus.netlify.app

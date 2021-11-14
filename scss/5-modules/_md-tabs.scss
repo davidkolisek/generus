@@ -6,16 +6,16 @@
     border: none;
     .nav-item {
       width: 100%;
-      .nav-link{
+      .nav-link {
         color: $c-primary-800;
         background: $white_c;
         border-radius: 0;
-&.active{
-  border-radius: 0;
-  color: $white_c;
-  background: $c-primary-800;
-}
-      width: 100%;
+        &.active {
+          border-radius: 0;
+          color: $white_c;
+          background: $c-primary-800;
+        }
+        width: 100%;
       }
     }
     @media (max-width: $bp-tablet) {
@@ -33,7 +33,7 @@
         opacity: 0;
         margin-top: 1rem;
         &.active {
-          display: block!important;
+          display: block !important;
           opacity: 1;
         }
       }
